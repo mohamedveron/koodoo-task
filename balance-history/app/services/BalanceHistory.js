@@ -16,6 +16,19 @@ class BalanceHistory{
 
 
     async getBalanceHistoryStatus(historyList){
+        var list = [];
+
+        for (let item in historyList) {
+            
+            list.push(historyList[item])
+        }
+
+
+        console.log(list);
+
+        list.sort((a, b) => (a.monthNumber > b.monthNumber) ? 1 : -1 )
+
+        console.log(list);
 
         return "fixed"
     }
