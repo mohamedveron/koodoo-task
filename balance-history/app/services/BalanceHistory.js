@@ -1,5 +1,8 @@
 'use strict'
 
+const Utils = use('App/services/Utils');
+const utils = new Utils();
+
 
 let _instance = null;
 
@@ -16,17 +19,8 @@ class BalanceHistory{
 
 
     async getBalanceHistoryStatus(historyList){
-        var list = [];
 
-        for (let item in historyList) {
-            
-            list.push(historyList[item])
-        }
-
-
-        console.log(list);
-
-        list.sort((a, b) => (a.monthNumber > b.monthNumber) ? 1 : -1 )
+        var list = utils.SortBalanceHistoryList(historyList);
 
         console.log(list);
 
