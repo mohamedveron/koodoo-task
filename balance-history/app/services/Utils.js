@@ -24,7 +24,7 @@ class Utils{
             list.push(historyList[item])
         }
 
-        list.sort((a, b) => (a.monthNumber > b.monthNumber) ? 1 : -1 )
+        list.sort((a, b) => (a.monthNumber < b.monthNumber) ? 1 : -1 )
 
         return list;
     }

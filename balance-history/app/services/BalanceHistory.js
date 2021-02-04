@@ -22,9 +22,25 @@ class BalanceHistory{
 
         var list = utils.SortBalanceHistoryList(historyList);
 
-        console.log(list);
+        var status = "fixed"
 
-        return "fixed"
+        if(list.length < 2){
+            return status;
+        }
+
+        var PrevDiff = Math.abs(list[0].account.balance.amount - list[1].account.balance.amount)
+        var currentDiff = 0;
+
+        for (let i = 1; i < list.length - 1; i++) {
+            var currentDiff = Math.abs(list[i].account.balance.amount - list[i + 1].account.balance.amount);
+            
+            if(PrevDiff != currentDiff){
+                status = "variable";
+                return status;
+            }
+        }
+
+        return status
     }
 }
 
