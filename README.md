@@ -51,24 +51,32 @@ adonis serve --dev
 
 Method: post 
 
-Body: [
+Body: 
+[
   {
+  
     "monthNumber": 0, 
     "account": {
       "balance": { "amount": 0 }
     }
   },
+  
   {
+  
     "monthNumber": 2, 
     "account": {
       "balance": { "amount": 200 }
     }
+    
   },
+  
   {
+  
     "monthNumber": 1, 
     "account": {
       "balance": { "amount": 100 }
     }
+    
   },
 
   {
@@ -77,5 +85,7 @@ Body: [
     "account": {
       "balance": { "amount": 200 }
     }
+    
   }
+  
 ]
