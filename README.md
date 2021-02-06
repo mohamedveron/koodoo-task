@@ -3,14 +3,19 @@ This app is developed using adonis js framework
 
 ## Algorithm Description:
 1- Sort the balance history list in descending order.
-2- Calculate the absolute value between the last two monthes
-3- If the value the same or no change in the amount will be fixed else will be variable
+
+2- Calculate the absolute value between the last two monthes.
+
+3- If the value the same or no change in the amount will be fixed else will be variable.
 
 ## Covered Scenarios by the algorithm :
 
 1- Unsorted and Sorted balance history list with FIXED change in balance.
+
 2- Unsorted balance history list with no change in amount month and FIXED change in balance. 
+
 3- Unsorted balance history list with a deposite month and FIXED change in balance.
+
 4- Unsorted and Sorted balance history list with VARIABLE change in balance.
 
 ## Setup
