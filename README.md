@@ -33,6 +33,7 @@ npm i -g @adonisjs/cli
 ```bash
 adonis install @adonisjs/vow
 cd balance-history
+npm install
 adonis test
 ```
 
@@ -42,6 +43,7 @@ Use the adonis command to run the app
 
 ```bash
 cd balance-history
+npm install
 adonis serve --dev
 ```
 
