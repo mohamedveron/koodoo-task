@@ -54,38 +54,28 @@ Method: post
 Body: 
 [
   {
-  
     "monthNumber": 0, 
     "account": {
       "balance": { "amount": 0 }
-    }
+   }
   },
-  
   {
-  
     "monthNumber": 2, 
     "account": {
       "balance": { "amount": 200 }
     }
-    
   },
-  
   {
-  
     "monthNumber": 1, 
     "account": {
       "balance": { "amount": 100 }
     }
-    
   },
-
   {
-      
     "monthNumber": 3, 
     "account": {
       "balance": { "amount": 200 }
-    }
-    
+    } 
   }
   
 ]
