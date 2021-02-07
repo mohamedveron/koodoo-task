@@ -1,31 +1,51 @@
-# Adonis fullstack application
+# koodoo-task
+This app is developed using adonis js framework
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+## Algorithm Description:
+1- Sort the balance history list in descending order.
+2- Calculate the absolute value between the last two monthes
+3- If the value the same or no change in the amount will be fixed else will be variable
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+## Covered Scenarios by the algorithm :
+
+1- Unsorted and Sorted balance history list with FIXED change in balance.
+2- Unsorted balance history list with no change in amount month and FIXED change in balance. 
+3- Unsorted balance history list with a deposite month and FIXED change in balance.
+4- Unsorted and Sorted balance history list with VARIABLE change in balance.
 
 ## Setup
 
-Use the adonis command to install the blueprint
+Node.js >= 8.0.0
+
+npm >= 3.0.0
+
+# Install adonis js
+
+npm i -g @adonisjs/cli
+
+# Run the unit tests:
 
 ```bash
-adonis new yardstick
+adonis install @adonisjs/vow
+
+adonis test
 ```
 
-or manually clone the repo and then run `npm install`.
+## Start the http server:
 
+Use the adonis command to run the app
 
-### Migrations
+```bash
 
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+adonis serve --dev
 ```
+
+### Apis:
+
+# 1- http://localhost:3333/balanceHistoryStatus
+
+Method: post 
+
+Body: [ { "monthNumber": 0, "account": { "balance": { "amount": 0 } } }, { "monthNumber": 2, "account": { "balance": { "amount": 200 } } }, { "monthNumber": 1, "account": { "balance": { "amount": 100 } } }, { "monthNumber": 3, "account": { "balance": { "amount": 200 } } }
+
+]
